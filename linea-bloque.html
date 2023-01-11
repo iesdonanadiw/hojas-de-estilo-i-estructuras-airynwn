@@ -8,13 +8,23 @@
     <meta charset="utf-8" />
     <style>
       h1,
-      p {
+      p { /* bloque -> linea */
         border: 1px solid black;
+        display: inline;
       }
 
       a,
-      span {
+      span { /* linea -> bloque */
         border: 1px solid red;
+        display: block;
+      }
+
+      textarea {
+        visibility: hidden;
+      }
+
+      .lista {
+        display:list-item;
       }
     </style>
   </head>
@@ -34,5 +44,24 @@
       voluptatum velit minus commodi, impedit at excepturi porro ipsam repellat
       ex.
     </p>
+    <br>
+    <form action="">
+      <label for="nombre">Nombre: </label>
+      <input type="text" name="nombre" id="">
+      <br>
+      <label for="color">Color:</label>
+      <select name="color" id="color">
+        <option value="rojo">rojo</option>
+        <option value="azul">azul</option>
+        <option value="verde">verde</option>
+        <option value="amarillo">amarillo</option>
+      </select>
+      <br>
+      <textarea name="area" id="" cols="30" rows="10"></textarea>
+      <br>
+      <button type="submit">Enviar</button>
+    </form>
+    <p class="lista">muy buenas a todos guapisimos bienvenidos a un nuevo video de vegetta777</p>
+    <p class="lista">aqui willyrex comentando</p>
   </body>
 </html>

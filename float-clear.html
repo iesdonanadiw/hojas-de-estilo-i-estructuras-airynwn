@@ -6,6 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Float y Clear</title>
     <meta charset="utf-8" /> 
+    <style>
+      .naranja {
+        background-color: orange;
+        /* float: left;
+        clear: left; */
+      }
+
+      .rojo {
+        background-color: red;
+        /* float: left;
+        clear: left; */
+      }
+
+      .verde {
+        background-color: lime;
+        clear: both;
+      }
+
+      #wrapper-left > .naranja, #wrapper-left > .rojo {
+        float: left;
+        clear: right;
+      }
+
+      #wrapper-right > .rojo, #wrapper-right > .naranja {
+        float: right;
+        clear: left;
+      }
+
+      #wrapper-both > .naranja {
+        float: left;
+        clear: both;
+      }
+      
+      #wrapper-both > .rojo {
+        float: right;
+      }
+
+    </style>
   </head>
   <body>
     <div id="wrapper-left">
